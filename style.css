@@ -69,9 +69,51 @@ header .logo a {
     letter-spacing: 1.5px;
 }
 
-header .bars a i {
-    font-size: 2rem;
+.dropbtn {
+    background-color: transparent;
     color: var(--color1);
+    padding: 16px;
+    font-size: 2rem;
+    border: none;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown hr {
+    width: 80%;
+    height: 0;
+    margin: auto;
+    border: 0.5px solid var(--color1);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+    line-height: 60px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 0;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 header nav a {
@@ -434,7 +476,7 @@ footer .copyrights {
 }
 
 @media (min-width:701px) {
-    header .container .bars {
+    header .container .dropbtn {
         display: none;
     }
 }
